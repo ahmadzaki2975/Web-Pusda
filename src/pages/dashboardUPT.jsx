@@ -3,6 +3,7 @@ import { Navbar } from "../components/Navbar";
 import { UPTDashboardTableRow } from "../components/UPTDashboard/UPTDashboardTableRow";
 import { useState } from "react";
 import { DeleteConfirmation } from "../components/UPTDashboard/DeleteConfirmation";
+import { Link } from "react-router-dom";
 
 export const DashboardUPT = () => {
   const [openTambahTanah, setOpenTambahTanah] = useState(false);
@@ -65,7 +66,7 @@ export const DashboardUPT = () => {
     <div className="d-flex ">
       <SideMenu />
       <div className="w-100">
-        <Navbar tambahTanah={openTambahTanah} info={navbarInfo}/>
+        <Navbar info={navbarInfo}/>
         <main className="bg-light-gray h-100 ">
           {!openTambahTanah ? (
             <>
@@ -84,14 +85,12 @@ export const DashboardUPT = () => {
                     placeholder="Search"
                     aria-label="Search"
                   ></input>
-                  <div
+                  <Link
+                    to="/dashboard/tambah"
                     className="primary-btn d-flex justify-content-center align-items-center"
-                    onClick={() => {
-                      toggleTambahTanah();
-                    }}
                   >
                     Tambah Induk
-                  </div>
+                  </Link>
                 </div>
               </div>
 

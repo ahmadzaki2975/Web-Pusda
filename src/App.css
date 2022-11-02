@@ -211,6 +211,11 @@ form .form-btn {
   cursor: pointer;
 }
 
+.secondary-btn:hover {
+  background-color: var(--cyanblue);
+  color: white;
+}
+
 .primary-btn {
   background: var(--cyanblue);
   color: white;
