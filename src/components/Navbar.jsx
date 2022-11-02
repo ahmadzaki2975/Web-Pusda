@@ -45,7 +45,7 @@ export const Navbar = () => {
         <div>
           <p className="m-0">DATA ASET</p>
           <h2 className="font-semibold">
-            {`UPT ${id}`}
+            {`UPT PSDA WS BRANTAS di ${id}`}
           </h2>
         </div>
         <div className="d-flex align-items-center gap-2 h-100">

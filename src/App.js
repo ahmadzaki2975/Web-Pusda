@@ -5,6 +5,7 @@ import { Dashboard } from './pages/dashboard';
 import { DashboardUPT } from './pages/dashboardUPT';
 import { TambahTanah } from './pages/tambahTanah';
 import { DetailTanah } from './pages/detailTanah';
+import { Page7 } from './pages/informasiTanahBagian';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path='/dashboard/:id' element={<DashboardUPT />} />
         <Route path="/dashboard/tambah" element={<TambahTanah />} />
         <Route path="/dashboard/upt/detail" element={<DetailTanah />} />
+        <Route path="/dashboard/upt/detail/tanah-bagian" element={<Page7 />} />
         <Route path="*" element={
         <div className='text-center'>
           <h3>404 Not Found</h3>

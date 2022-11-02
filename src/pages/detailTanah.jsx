@@ -1,6 +1,6 @@
 import { Navbar } from "../components/Navbar";
 import { SideMenu } from "../components/SideMenu";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 export const DetailTanah = () => {
   const navigate = useNavigate();
@@ -105,7 +105,7 @@ export const DetailTanah = () => {
                 </div>
               </div>
               <div className="table-tanah-bagian">
-                <div className="row" style={{ background: "#F8F8F8", padding:"15px", border: "1px solid white"}}>
+                <Link to="/dashboard/upt/detail/tanah-bagian" className="row text-dark" style={{ background: "#F8F8F8", padding:"15px", border: "1px solid white"}}>
                   <div
                     to="/dashboard/upt/detail"
                     className="col number d-flex align-items-center justify-content-center font-semibold "
@@ -136,8 +136,8 @@ export const DetailTanah = () => {
                     <p className="table-title p-0 m-0">LUAS</p>
                     <p className="p-0 m-0">242 m</p>
                   </div>
-                </div>
-                <div className="row" style={{ background: "#F8F8F8", padding:"15px", border: "1px solid white"}}>
+                </Link>
+                <Link to="/dashboard/upt/detail/tanah-bagian" className="row text-dark" style={{ background: "#F8F8F8", padding:"15px", border: "1px solid white"}}>
                   <div
                     to="/dashboard/upt/detail"
                     className="col number d-flex align-items-center justify-content-center font-semibold "
@@ -168,8 +168,8 @@ export const DetailTanah = () => {
                     <p className="table-title p-0 m-0">LUAS</p>
                     <p className="p-0 m-0">242 m</p>
                   </div>
-                </div>
-                <div className="row" style={{ background: "#F8F8F8", padding:"15px", border: "1px solid white"}}>
+                </Link>
+                <Link to="/dashboard/upt/detail/tanah-bagian" className="row text-dark" style={{ background: "#F8F8F8", padding:"15px", border: "1px solid white"}}>
                   <div
                     to="/dashboard/upt/detail"
                     className="col number d-flex align-items-center justify-content-center font-semibold "
@@ -200,7 +200,7 @@ export const DetailTanah = () => {
                     <p className="table-title p-0 m-0">LUAS</p>
                     <p className="p-0 m-0">242 m</p>
                   </div>
-                </div>
+                </Link>
               </div>
             </div>
           </div>

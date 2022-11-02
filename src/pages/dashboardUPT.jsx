@@ -8,7 +8,6 @@ import { Link } from "react-router-dom";
 export const DashboardUPT = () => {
   const [openTambahTanah, setOpenTambahTanah] = useState(false);
   const [show, setShow] = useState(false);
-  const [navbarInfo, setNavbarInfo] = useState("")
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -54,10 +53,10 @@ export const DashboardUPT = () => {
 
   const toggleTambahTanah = () => {
     if(openTambahTanah) {
-      setNavbarInfo("")
+      // setNavbarInfo("")
       setOpenTambahTanah(false)
     } else {
-      setNavbarInfo("/Tambah Total Tanah")
+      // setNavbarInfo("/Tambah Total Tanah")
       setOpenTambahTanah(true)
     }
   };
@@ -66,7 +65,7 @@ export const DashboardUPT = () => {
     <div className="d-flex ">
       <SideMenu />
       <div className="w-100">
-        <Navbar info={navbarInfo}/>
+        <Navbar />
         <main className="bg-light-gray h-100 ">
           {!openTambahTanah ? (
             <>

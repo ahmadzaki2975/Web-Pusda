@@ -301,5 +301,17 @@ form .form-btn {
   color:#BCBCBC;
 }
 
+.table-tanah-bagian > *:hover {
+  outline: 1px var(--cyanblue) solid;
+}
+
+.informasi-tanah-bagian h5 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.filename {
+  color: var(--cyanblue);
+}
 
 
