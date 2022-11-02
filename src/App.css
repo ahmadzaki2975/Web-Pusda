@@ -263,4 +263,43 @@ form .form-btn {
   min-height: 150px;
 }
 
+.file-input {
+  height: fit-content;
+  padding: 30px 10px;
+  background: #EDF9FB;
+  border: #3C9EAC 2px dashed;
+  border-radius: 4px;
+  outline: none !important;
+
+}
+
+.file-input .secondary-text {
+  color: #BCBCBC;
+  font-size: 12px;
+  text-align: center;
+  margin: 0 40px;
+}
+
+.file-input img {
+  margin-bottom: 20px;
+}
+
+.db-upt-row:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.informasi-tanah .title {
+  font-size: 14px;
+}
+
+.informasi-tanah > div {
+  gap: 25%;
+}
+
+.table-title {
+  font-size: 13px;
+  color:#BCBCBC;
+}
+
+
 

@@ -1,5 +1,6 @@
 import { UPTDashboardTableCol } from "./UPTDashboardTableCol";
 import { FaRegEdit, FaRegTrashAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export const UPTDashboardTableRow = ({
   id,
@@ -15,12 +16,12 @@ export const UPTDashboardTableRow = ({
 }) => {
   return (
     <div
-      className="row mx-auto bg-white m-1 py-2"
+      className="row db-upt-row mx-auto bg-white m-1 py-2"
       style={{ width: "95%", borderRadius: "5px", minHeight: "80px" }}
     >
-      <div className="col number d-flex align-items-center justify-content-center font-semibold">
+      <Link to="/dashboard/upt/detail" className="col number d-flex align-items-center justify-content-center font-semibold ">
         {id}
-      </div>
+      </Link>
       <UPTDashboardTableCol title="SERTIFIKAT NOMOR" value={sertifikatNomor} />
       <UPTDashboardTableCol title="HAK PAKAI TANGGAL" value={hakPakaiTanggal} />
       <UPTDashboardTableCol

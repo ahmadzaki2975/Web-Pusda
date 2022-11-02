@@ -145,7 +145,7 @@ export const DashboardUPT = () => {
                   >
                     Batal
                   </div>
-                  <div className="primary-btn">Tambah Data</div>
+                  <div className="primary-btn">Simpan</div>
                 </div>
               </div>
               <div className="m-3">
